@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    vector<int> a = {1, 4, 3, 2, 6};
+    vector<int> a = {1, 2, 3, 4, 5};
     int l = 0, h = a.size() - 1, m, target = 5;
     bool f = false;
     while (l <= h)
