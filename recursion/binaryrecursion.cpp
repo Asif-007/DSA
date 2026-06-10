@@ -10,7 +10,6 @@ void subsequence(vector<int> a, vector<int> ans, int idx)
         return;
     }
     subsequence(a, ans, idx + 1);
-    cout << idx << endl;
     ans.push_back(a[idx]);
     subsequence(a, ans, idx + 1);
 }
