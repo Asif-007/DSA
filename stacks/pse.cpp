@@ -3,16 +3,15 @@ using namespace std;
 
 int main()
 {
-    vector<int> a = {3, 2, 5, 6, 1};
+    vector<int> a = {100, 80, 60, 70, 60, 75, 85};
     vector<int> ans(a.size(), -1);
     stack<int> s;
-    for (int i = a.size() - 1; i >= 0; i--)
+    for (int i = 0; i < a.size(); i++)
     {
-        while (!s.empty() && a[i] < a[s.top()])
-        {
-            ans[s.top()] = a[i];
+        while (!s.empty() && a[i] <= a[s.top()])
             s.pop();
-        }
+        if (!s.empty())
+            ans[i] = a[s.top()];
         s.push(i);
     }
     for (int i : a)
