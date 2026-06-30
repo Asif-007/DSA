@@ -109,7 +109,7 @@ int main()
     cout << "Postorder Traversal : ";
     postOrder(root);
     cout << endl;
-    cout << "Levelorder Traveral : ";
+    cout << "Levelorder Traversal : ";
     levelOrder(root);
     cout << endl;
     cout << "Number of leaf Node : " << countLeaves(root) << endl;
